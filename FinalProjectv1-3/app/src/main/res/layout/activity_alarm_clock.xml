@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlarmClock">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="vertical"
+            android:focusable="false"
+            android:focusableInTouchMode="false">
+
+            <TimePicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/alarmTimePicker"
+                android:onClick="time" />
+
+            <TextView
+                android:layout_width="96dp"
+                android:layout_height="40dp"
+                android:text="@string/repeat"
+                android:id="@+id/alaramText"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:onClick="time" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="112dp"
+                        android:orientation="horizontal"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false">
+                                <CheckBox
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/sunday"
+                                    android:id="@+id/sundayCheckBox"
+                                    />
+                                <CheckBox
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/monday"
+                                    android:id="@+id/mondayCheckBox"
+                                    android:layout_toEndOf="@+id/sundayCheckBox"
+                                    android:layout_toRightOf="@+id/sundayCheckBox"/>
+
+                                <CheckBox
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/tuesday"
+                                    android:id="@+id/tuesdayCheckBox"
+                                    android:layout_toEndOf="@+id/mondayCheckBox"
+                                    android:layout_toRightOf="@+id/mondayCheckBox" />
+
+
+
+                                <CheckBox
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/wednesday"
+                                    android:id="@+id/wednesdayCheckBox"
+                                    android:layout_below="@+id/sundayCheckBox"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true" />
+
+
+
+                                <CheckBox
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/thursday"
+                                    android:id="@+id/thursdayCheckBox"
+                                    android:layout_below="@+id/mondayCheckBox"
+                                    android:layout_toRightOf="@+id/wednesdayCheckBox"
+                                    android:layout_toEndOf="@+id/wednesdayCheckBox" />
+                                <CheckBox
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/friday"
+                                    android:id="@+id/fridayCheckBox"
+                                    android:layout_alignTop="@+id/thursdayCheckBox"
+                                    android:layout_toRightOf="@+id/thursdayCheckBox" />
+                                <CheckBox
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/saturday"
+                                    android:id="@+id/saturdayCheckBox"
+                                    android:layout_below="@+id/wednesdayCheckBox"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true" />
+                    </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/description"
+                android:id="@+id/descriptionText"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/descriptionEditText"
+                android:inputType="text" />
+
+
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/saveButton"
+                android:text="@string/save"
+                android:layout_weight="1"
+                android:onClick="save"/>
+
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cancelButton"
+                android:text="@string/cancel"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/saveButton"
+                android:onClick="cancel"/>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">FinalProjectv1</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Add Alaram Clock</string>
+    <string name="action_settings2">Weather</string>
+    <string name="repeat">Repeat</string>
+    <string name="sunday">Sunday</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="description">Description</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="Date">Date</string>
+    <string name="Day">Day</string>
+    <string name="Temp">Temp</string>
+    <string name="High">High Temp</string>
+    <string name="Low">Low Temp</string>
+    <string name="Code">Code</string>
+    <string name="Description">Description</string>
+    <string name="Time">Time</string>
+    <string name="Days">Days</string>
+</resources>
